@@ -17,7 +17,9 @@ def product_list(request):
 
     elif request.method == 'POST':
         serializer = ProductSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
         return Response('ok')
+       
 
 @api_view()
 def product_detail(request,id):
@@ -28,4 +30,6 @@ def product_detail(request,id):
 @api_view()        
 def collection_detail(request,pk):
     return Response('ok')
-# 7 -creating view
+
+
+# Next tOPIC Dta Valirdation 14
