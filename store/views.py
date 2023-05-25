@@ -32,4 +32,4 @@ def collection_detail(request,pk):
     return Response('ok')
 
 
-# Next tOPIC Dta Valirdation 14
+# Next tOPIC 15
